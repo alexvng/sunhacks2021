@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --vr-button-color: #691dce;
+}
+
+.navbar-link {
+  @apply mx-4;
+}
+
+.full-screen-title {
+  @apply flex flex-col h-screen items-center justify-center text-center font-bold;
+}
+
+/* Changes the color of WORDS on the ENTER VR button */
+.webvr-ui-title {
+    color: var(--vr-button-color);
+}
+
+/* Changes the color of LOGO on the ENTER VR button */
+.webvr-ui-svg {
+    fill: var(--vr-button-color);
+}
+
+/* Changes the color of ERROR LOGO on the ENTER VR button */
+.webvr-ui-svg-error {
+    fill: var(--vr-button-color);
+}
+
+/* Changes the color of BUTTON BORDER on the ENTER VR button */
+/* Do not remove "button.", it localizes the class */
+button.webvr-ui-button {
+    border: var(--vr-button-color) 2px solid;
+}
+
+.webvr-entry-page {
+    @apply bg-black;
+}
+
+a.go-back {
+    color: var(--vr-button-color);
+    @apply flex justify-start m-4 text-3xl rounded-md tracking-wider font-semibold;
+}
